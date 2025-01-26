@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+header {
+  background-color: rgba(114, 122, 142, 0.4);
+  margin: 0;
+}
+
+header h1 {
+  color: yellow;
+  background: black;
+}
+
+.xancy {
+  font-family: cursive;
+  background-color: red;
+  color: red;
+  display: inline-block;
+  width: 80%;
+}
+
+.plain {
+  font-family: Times, serif;
+  background-color: #ccc;
+  color: green;
+  width: 100%;
+}
+
+.content-nav {
+  background-color: rgb(43, 131, 203);
+  margin-top: 20px;
+}
+
+.content-nav > ul > li {
+  display: inline-block;
+  padding: 10px;
+}
+
+ul {
+    padding: 10px;
+    display: block;
+    margin-left: 100px;
+}
+
+.content-nav ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+}
+
+header > img {
+  text-align: center;
+  width: 20%;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+}
+
+header h1 {
+  text-align: center;
+  color: #ddd;
+  padding: 10px;
+}
+
+.content-main {
+  font-size: 15px;
+  width: 100%;
+  background-color: rgba(114, 122, 142, 0.4);
+  padding-top: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+.content-main p {
+  line-height: 1.4;
+  text-emphasis: none;
+}
+
+
+
+.content-list-img.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.flex .content-img {
+  width: 200px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.content-list-img.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-flow: row; /* Các phần tử chảy theo hàng */
+    place-items: center;
+    gap: 10px;
+}
+
+.grid .content-img {
+    width: 200px;
+    height: 130px;
+}
+
+.content-footer {
+  padding-top: 15px;
+  background-color: rgba(114, 122, 142, 0.4);
+}
