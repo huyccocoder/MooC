@@ -32,12 +32,12 @@
       the <a href="https://www.a2gov.org/departments/Parks-Recreation/parks-places/argo/pages/default.aspx">Argo Park
         Cascades</a>.</p>
         <div class="content-list-img grid">
-          <img src="img/neighbor/walk1.jpg" alt="" class="content-img">
-          <img src="img/neighbor/walk3.jpg" alt="" class="content-img">
-          <img src="img/neighbor/walk4.jpg" alt="" class="content-img">
-          <img src="img/neighbor/walk5.jpg" alt="" class="content-img">
-          <img src="img/neighbor/walk6.jpg" alt="" class="content-img">
-          <img src="img/neighbor/walk7.jpg" alt="" class="content-img">
+          <img src="img/neighbor/walk1.jpg" alt="" class="content-img" onmouseover="inImg(this)" onmouseout="outImg(this)">
+          <img src="img/neighbor/walk3.jpg" alt="" class="content-img" onmouseover="inImg(this)" onmouseout="outImg(this)">
+          <img src="img/neighbor/walk4.jpg" alt="" class="content-img" onmouseover="inImg(this)" onmouseout="outImg(this)">
+          <img src="img/neighbor/walk5.jpg" alt="" class="content-img" onmouseover="inImg(this)" onmouseout="outImg(this)">
+          <img src="img/neighbor/walk6.jpg" alt="" class="content-img" onmouseover="inImg(this)" onmouseout="outImg(this)">
+          <img src="img/neighbor/walk7.jpg" alt="" class="content-img" onmouseover="inImg(this)" onmouseout="outImg(this)">
         </div>
   </main>
   <footer class="content-footer">
@@ -46,6 +46,24 @@
       Specialization. Students are invited to make changes.</p>
   </footer>
 
+  <link rel="stylesheet" href="./test.js">
+  <script>
+    const images = document.querySelectorAll(".content-list-img img");
+
+    // Gán sự kiện mouseenter và mouseleave cho từng ảnh
+    images.forEach((img) => {
+      img.addEventListener("mouseenter", () => centerImage(img));
+      img.addEventListener("mouseleave", () => resetImage(img));
+    });
+
+    function inImg(img) {
+      img.classList.add("centered");
+    }
+
+    function outImg(img) {
+      img.classList.remove("centered");
+    }
+  </script>
 </body>
 
 </html>
