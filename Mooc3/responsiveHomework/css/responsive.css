@@ -1,0 +1,69 @@
+/* PC */
+@media (min-width: 1024px) {
+    
+}
+
+
+/* Tablet */
+@media (max-width: 1023px) and (min-width : 740px) {
+    .list-img{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+    }
+    
+    .list-img div {
+        width: calc(100% / 2 - 10px); /* Chia thành 3 cột, trừ đi khoảng padding/margin */
+        margin: 5px;
+        box-sizing: border-box; /* Đảm bảo padding/margin không làm tràn div */
+    }
+    
+    .list-img div img {
+        width: 200px;
+        height: 200px;
+        display: block;
+    }
+
+    main > p{
+        text-align: start;
+    }
+
+    footer > a{
+        font-size: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+
+
+    .list-img{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+    }
+    
+    .list-img div {
+        width: 100%; /* Chia thành 3 cột, trừ đi khoảng padding/margin */
+        margin: 5px;
+        box-sizing: border-box; /* Đảm bảo padding/margin không làm tràn div */
+    }
+    
+    .list-img div img {
+        width: 200px;
+        height: 200px;
+        display: block;
+    }
+
+    main > p{
+        text-align: justify;
+    }
+    
+    .scroll-top{
+     
+    }
+}   

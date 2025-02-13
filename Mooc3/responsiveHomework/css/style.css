@@ -3,6 +3,11 @@ body {
     background-color: #dedede;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 h1 {
     text-align: center;
     font-family:Arial, sans-serif;
@@ -41,6 +46,15 @@ div{
   width: 24%;
   margin: 5px;
   padding: 2px;
+}
+
+
+
+.list-img{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
