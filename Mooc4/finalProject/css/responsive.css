@@ -1,0 +1,38 @@
+@media (max-width: 1023px) and (min-width: 740px){
+    .grid-item:nth-child(3n){
+        grid-column: auto;
+    }
+
+    .grid-item:last-child{
+        grid-column: 1 / span 2;
+    }
+
+    .grid-item{
+        height: auto;
+        min-height: 200px; 
+        
+        /* Nếu bạn có viền hay bo góc */
+        border: 5px solid black;
+        border-radius: 50%;
+        margin-top: 20px;
+        /* position: relative;  nếu bạn cần định vị con bằng absolute */
+        
+        overflow: hidden;
+    }
+
+    .grid-img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .grid-desc{
+        border-radius: 0 0 54% 54%;
+    }
+}
+
+@media (max-width: 740px){
+    .grid-item{
+        grid-column: 1 / span 2;
+    }
+}
